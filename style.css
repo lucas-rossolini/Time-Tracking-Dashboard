@@ -3,7 +3,8 @@
 --------------------------------------*/
 
 body,
-ul {
+ul,
+h4, p {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
@@ -20,11 +21,18 @@ li {
 /* -------------------------------------
                 Style
 --------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C1324;
+}
 
 section {
     width: 375px;
     border-radius: 20px;
     background-color: #1D1E4E;
+    margin-top: 2rem;
 }
 
 #main-presentation {
@@ -34,7 +42,7 @@ section {
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 #main-presentation p {
@@ -67,4 +75,22 @@ section {
 
 #main-navigation ul li {
     margin: 2rem 0;
+}
+
+#work-section {
+    background-color: #FF8459;
+    overflow: hidden;
+}
+
+#work-section svg {
+    margin-top: -1rem;
+    margin-left: 17rem;
+    z-index: -10;
+}
+
+#work-contain {
+    background-color: #1D1E4E;
+    border-radius: 20px;
+    margin-top: -3rem;
+    z-index: 99;
 }
