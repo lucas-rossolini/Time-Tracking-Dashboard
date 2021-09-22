@@ -1,0 +1,70 @@
+/* -------------------------------------
+                Init
+--------------------------------------*/
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* -------------------------------------
+                Fin init
+--------------------------------------*/
+
+/* -------------------------------------
+                Style
+--------------------------------------*/
+
+section {
+    width: 375px;
+    border-radius: 20px;
+    background-color: #1D1E4E;
+}
+
+#main-presentation {
+    background-color: #5F3AF3;
+    display: flex;
+    color: #FFFFFF;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#main-presentation p {
+    color : #B3A5FF;
+    padding: 0 1.5rem;
+    margin-bottom: 0;
+}
+
+#main-presentation h4 {
+    font-weight: 300;
+    font-size: 24px;
+    padding: 0 1.5rem;
+    margin-top: 0;
+}
+
+#main-presentation img{
+    width: 60px;
+    height: 60px;
+    border: solid 3px #FFFFFF;
+    border-radius: 50%;
+}
+
+#main-navigation ul {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#main-navigation ul li {
+    margin: 2rem 0;
+}
