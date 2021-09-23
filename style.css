@@ -34,6 +34,12 @@ body{
     background-color: #0C1324;
 }
 
+#parent-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section {
     width: 375px;
     border-radius: 20px;
@@ -171,10 +177,65 @@ section {
     padding: 0 1.5rem .5rem 1.5rem;
 }
 
-.weekly-duration, 
-.weekly-previous-duration, 
-.monthly-duration,
-.monthly-previous-duration,
 .invisible {
     display: none;
+}
+
+/* -------------------------------------
+                Fin style
+--------------------------------------*/
+
+
+/* -------------------------------------
+                Responsive
+--------------------------------------*/
+
+@media screen and (min-width : 992px){
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 2rem;
+    }
+    
+    #parent-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 4rem;
+    }
+
+    section {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 20px;
+        background-color: #1D1E4E;
+        margin-top: 2rem;
+    }
+
+    #main-navigation {
+        height: 32rem;
+    }
+
+    .head svg {
+        margin-top: -.8rem;
+        margin-left: 9rem;
+        z-index: 0;
+        position: relative;
+    }
+
+    .contain {
+        height: 13rem;
+    }
+
 }
