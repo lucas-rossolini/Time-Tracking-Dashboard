@@ -4,7 +4,9 @@
 
 body,
 ul,
-h4, p {
+h4, 
+p,
+h5 {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
@@ -12,6 +14,10 @@ h4, p {
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* -------------------------------------
@@ -82,15 +88,93 @@ section {
     overflow: hidden;
 }
 
-#work-section svg {
-    margin-top: -1rem;
-    margin-left: 17rem;
-    z-index: -10;
+#play-section {
+    background-color: #02C4EA;
+    overflow: hidden;
 }
 
-#work-contain {
+#study-section {
+    background-color: #FF5F7D;
+    overflow: hidden;
+}
+
+#exercice-section {
+    background-color: #4AD082;
+    overflow: hidden;
+}
+
+#social-section {
+    background-color: #7235D2;
+    overflow: hidden;
+}
+
+#care-section {
+    background-color: #F1C75A;
+    overflow: hidden;
+}
+
+.head {
+    height: 75px;
+}
+
+.head svg {
+    margin-top: -.8rem;
+    margin-left: 17rem;
+    z-index: 0;
+    position: relative;
+}
+
+#exercice-svg{
+    padding-top: .5rem;
+}
+
+.contain {
     background-color: #1D1E4E;
     border-radius: 20px;
-    margin-top: -3rem;
+    margin-top: -2rem;
     z-index: 99;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.contain-title{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contain-dots{
+    color: #CFD1FF;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.contain-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.daily-previous-duration {
+    color: #A6A8DA;
+    font-size: 12px;
+}
+
+.duration {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem .5rem 1.5rem;
+}
+
+.weekly-duration, 
+.weekly-previous-duration, 
+.monthly-duration,
+.monthly-previous-duration,
+.invisible {
+    display: none;
 }
