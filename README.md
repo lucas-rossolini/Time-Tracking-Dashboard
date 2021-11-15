@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://lucas-rossolini.github.io/Time-Tracking-Dashboard/)
+- Live Site URL: [See it in action !](https://lucas-rossolini.github.io/Time-Tracking-Dashboard/)
 
 ## My process
 
