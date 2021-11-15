@@ -227,7 +227,6 @@ function createNewCard(duration) {
     let newSection = document.createElement("section");
 
     const cards = document.querySelector("#cards");
-    // console.log(cards);
 
     newSection.classList.add("card-section");
     newSection.setAttribute("id", myData[i].idSection);

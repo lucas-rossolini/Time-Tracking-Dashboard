@@ -12,11 +12,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![dashboard screenshot](.images/screenshot.png)
+![dashboard screenshot](./images/screenshot.png)
 
 ### Links
 
@@ -46,55 +42,51 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was my first real DOM maniulation exercise with javascript. I learned how to create a full element only using javascript and dynamic informations.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function createNewCard(duration) {
+  for (i = 0; i < myData.length; i++) {
+    let oldSection = document.querySelector(`#${myData[i].idSection}`);
+    oldSection.remove();
+  }
+  for (i = 0; i < myData.length; i++) {
+    let newSection = document.createElement("section");
+
+    const cards = document.querySelector("#cards");
+
+    newSection.classList.add("card-section");
+    newSection.setAttribute("id", myData[i].idSection);
+
+    let el = `<div class="head">`;
+    el += myData[i].svgSection;
+    el += `</div>`;
+    el += `<div class="contain">`;
+    el += `<div class="contain-head">`;
+    el += `<h5 class="contain-title">${myData[i].title}</h5>`;
+    el += `<a class="contain-dots" href="">•••</a>`;
+    el += `</div>`;
+    el += `<div class="duration">`;
+    el += `<p class="current-duration">${myData[i].timeframes[duration].current} hrs</p>`;
+    el += `<p class="previous-duration">Last ${myData[i].timeframes[duration].timing} - ${myData[i].timeframes[duration].previous} hrs</p>`;
+    el += `</div>`;
+    el += `</div>`;
+
+    newSection.innerHTML = el;
+
+    cards.appendChild(newSection);
+  }
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For my next project I will focus on using React more than using scripts in an HTML document.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [Lucas Rossolini](https://github.com/lucas-rossolini)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
