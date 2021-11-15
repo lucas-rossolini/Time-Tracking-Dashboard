@@ -4,7 +4,7 @@
 
 body,
 ul,
-h4, 
+h4,
 p,
 h5 {
     margin: 0;
@@ -18,6 +18,7 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* -------------------------------------
@@ -38,6 +39,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.inactive{
+    color: #6766AC;
+}
+
+.active{
+    color: #FFFFFF;
+}
+
+.inactive:hover {
+    color: #FFFFFF;
 }
 
 section {
@@ -162,7 +175,7 @@ section {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-.daily-previous-duration {
+.previous-duration {
     color: #A6A8DA;
     font-size: 12px;
 }
@@ -192,27 +205,23 @@ section {
 
 @media screen and (min-width : 992px){
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-column-gap: 2rem;
-    }
-    
     #parent-section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        padding: 1rem;
+        margin: 2rem;
     }
 
     #cards{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;
-        padding: 4rem;
+        width:60rem;
+        /* padding: 4rem; */
     }
 
     section {
@@ -225,6 +234,7 @@ section {
 
     #main-navigation {
         height: 32rem;
+        width: 15rem;
     }
 
     .head svg {
@@ -236,6 +246,42 @@ section {
 
     .contain {
         height: 13rem;
+    }
+
+    .duration {
+        color: #FFFFFF;
+        font-weight: 300;
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 1.5rem .5rem 1.5rem;
+    }
+
+    #main-navigation ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    #main-presentation {
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem 0 5rem;
+    }
+
+    #main-presentation img {
+        margin : 0 1.5rem 2rem;
+    }
+
+    .card-section {
+        margin: 1rem;
     }
 
 }
