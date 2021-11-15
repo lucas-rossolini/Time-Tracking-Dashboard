@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.images/screenshot.png)
+![dashboard screenshot](.images/screenshot.png)
 
 ### Links
 
