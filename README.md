@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![dashboard screenshot](./images/screenshot.png)
+![dashboard screenshot](./images/screeshot.png)
 
 ### Links
 
